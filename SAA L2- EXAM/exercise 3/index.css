@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+.main-container{
+    max-height: 100vh;
+    height: 100vh;
+    padding-top: 8%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: dodgerblue;
+}
+.form-container{
+    background-color: #fff;
+    height: 420px;
+    width: 500px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 1px 1px 20px 0px grey
+ 
+}
+.form-container .form-head, .form-container .form-group, .form-container .form-spe{
+    padding: 0px 10%;
+}
+.form-container .form-head{
+    text-align: center;
+    padding: 7% 0 3% 0;
+}
+.form-container .form-head a{
+    padding: 10px 16px ;
+    border-radius: 60px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 30px;
+}
+.form-container .form-head h1{
+    margin-top: 10px ;
+}
+
+.form-container .form-group button, .form-container .form-group input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.form-container .form-group button{
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.form-container .form-group button:hover{
+    opacity: 0.7;
+}
+.form-container .form-group input{
+    background-color: #ccc;
+    padding: 5px 12px;
+}
+.form-container .form-group input::placeholder{
+
+    font-size: 16px;
+}
+
+.form-container .form-spe{
+    position: relative;
+}
+.form-container .form-spe a{
+    position: absolute;
+    right: 10%;
+    text-decoration: none;
+    color: blue;
+}
+.form-container .form-spe a:hover{
+    text-decoration: underline;
+}
+.form-container .form-spe span{
+    padding-left: 2%;
+
+}
+.form-container .form-foot{
+    width: 100%;
+    background-color: #ccc;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    padding: 15px;
+}
+.form-container .form-foot a{
+    text-decoration: none; 
+    color: blue;
+}
+.form-container .form-foot a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 920px) {
+
+    .main-container{
+        padding-top: 15%;
+    }
+    .form-container{
+        width: 400px;
+        height: 410px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main-container{
+        padding-top: 35%;
+    }
+    .form-container{
+        width: 420px;
+        height: 430px;
+    }
+    .form-container{
+        width: 380px;
+        height: 400px;
+    }
+}
